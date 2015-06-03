@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# How to implement the point of Sale
+
+---
+#Intro
+
+1 Community module
+
+2 Our hardware experience
+
+3 Deploy your first project
+
+---
+
+# Community module : https://github.com/OCA/pos
+
+## Ready module
+
+1 pos_customer_display
+
+2 pos_payment_terminal
+
+3 pos_pricelist
+
+4 pos_product_template
+
+5 pos_remove_pos_category
+
+---
+
+# Community module :
+
+## Pending Merge
+
+1 pos_order_load
+
+2 pos-sale-order
+
+---
+# Customer display
+
+odoo module: pos_customer_display
+
+posbox module: hw_customer_display
+
+image: pos-display.png
+
+feature:
+- showing product price at each scan
+- showing the total before asking the payment method (button)
+
+
+---
+# Product Template
+
+odoo module : pos_product_template
+
+image : capture du POS
+
+feature:
+- add the support of variant in the POS
+- select the attribute to filter the variant
+
+---
+# Payment Terminal
+
+odoo module: pos_payment_terminal
+
+posbox module: hw_telium_payment_terminal
+
+feature:
+
+- sending the total to the Card Reader
+
+
+image: pos_cb.png
+
+
+---
+# Pricelist
+
+This module add the support of pricelist inside the POS
+
+odoo module : pos_pricelist
+
+feature:
+- fiscal position
+- all pricelist feature !
+
+image: pos_price_list.png 
+
+Big Thanks to Taktik : adil.houmadi@gmail.com
+
+---
+# Remove Pos Category
+
+Simplify the category management by replacing the pos_category by the product category.
+
+odoo module : pos_remove_pos_category
+
+image : pos_remove_category.png
+
+
+
+---
+# Pos Sale Order
+
+odoo module : pos_sale_order
+
+feature:
+- replace the pos_order by the sale_order:
+
+advantage:
+
+- everything is a sale order (e-commerce, shop, direct sale...)
+
+- posibility to have more complicated flow (selling on POS and produce with MRP)
+
+
+---
+# Pos order load/reload
+
+odoo module : pos_load
+
+Work in progress
+
+- possibility to save and reload an order
+
+
+
+
+
+---
+
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
