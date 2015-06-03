@@ -12,7 +12,7 @@ class: center, middle, inverse
 
 ## Sébastien Beau
 * Co-funder of Akretion
-* OCA board
+* OCA board member
 * @seb_beau
 
 .akretion-logo[
@@ -25,11 +25,11 @@ class: center, middle, inverse
 
 1 Community module
 
-2 Our hardware and experience deploiement
+2 Our hardware and experience deployment
 
-3 My Recommandation
+3 My recommandations
 
-4 Question
+4 Questions
 
 ---
 
@@ -65,9 +65,9 @@ odoo module: pos_customer_display
 
 posbox module: hw_customer_display
 
-feature:
+features:
 - showing product price at each scan
-- showing the total before asking the payment method (button)
+- showing the total price before asking for the payment method (button)
 
 .image[![POS Display](image/pos-display.png)]
 
@@ -77,7 +77,7 @@ feature:
 
 odoo module : pos_product_template
 
-feature:
+features:
 - add the support of variant in the POS
 - select the attribute to filter the variant
 
@@ -99,11 +99,11 @@ feature:
 ---
 # Pricelist
 
-This module add the support of pricelist inside the POS
+This module add the support of pricelists inside the POS
 
 odoo module : pos_pricelist
 
-feature:
+features:
 - fiscal position
 - all pricelist feature !
 
@@ -132,7 +132,7 @@ advantage:
 
 - everything is a sale order (e-commerce, shop, direct sale...)
 
-- posibility to have more complicated flow (selling on POS and produce with MRP)
+- possibility to have more complicated flows (selling on POS and produce with MRP)
 
 .image[![Product Template](image/pos_sale_order.png)]
 
@@ -143,7 +143,7 @@ odoo module : pos_load and pos_load_sale_order
 
 Work in progress
 
-- possibility to save and reload an order
+- possibility to save and reload a sale order
 
 .image[![Product Template](image/pos_load.png)]
 
@@ -174,12 +174,12 @@ Carte Reader
 
 ## Advantage
 
-- Full integrated with our ERP
+- Fully integrated with our ERP
 - Easy to set up
 - Client side application in browser (easy to maintain)
 - Extendable
 
-and V9 version improve a lot the POS ;) 
+and V9 version improves a lot the POS ;)
 
 ---
 # Implementation Feeback
@@ -189,7 +189,7 @@ and V9 version improve a lot the POS ;)
 - many accounting entries generated (improvement soon)
 - still young solution (not a lot of feedback)
 - need benchmark (how many product can be supported 20K is ok, 100K?)
-- starting the POS can be long if you have a lot of product/partner
+- starting the POS can be long if you have a lot of products/partners
 
 ---
 # Take care
@@ -198,7 +198,7 @@ and V9 version improve a lot the POS ;)
 
 - Shutdown can corrupt your SD cart
 - ideally avoid writting on SD cart (mount RAM log partition)
-- look at here before buying a SD cart : http://elinux.org/RPi_SD_cards 
+- look at here before buying a SD cart : http://elinux.org/RPi_SD_cards
 
 ---
 
@@ -213,7 +213,7 @@ and V9 version improve a lot the POS ;)
 ## Small Projet
 
 - Use the cheapest solution (raspberry with existing computer)
-- Do not waist time by configuring your own posbox, buy it (with redundency), Odoo sell it
+- Do not waste time by configuring your own posbox, buy it (with redundency), Odoo sell it
 
 ---
 # Why did we contribute it to OCA ?
@@ -224,11 +224,11 @@ and V9 version improve a lot the POS ;)
 - Follow OCA quality processes :
   - continuous integration (Travis)
   - peer reviews
-- Vendor independence
+- Vendor independance
 - Attract more users and contributors
   - longevity
   - new features, enhancements
-  - bug fix
+  - bug fixes
   - migrations to newer versions
 
 ---
